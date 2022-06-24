@@ -1,11 +1,13 @@
-import React from 'react'
-import style from './Pane.module.scss'
+import React from "react";
+import style from "./Pane.module.scss";
 
-function Pane(props: any) {
-    const className= `${style.pane} ${props.className}`
-  return (
-    <div className={className} >{props.childern}</div>
-  )
-}
+type Props = {
+  className: string;
+  children: JSX.Element;
+};
+const Pane = ({ className, children }: Props) => {
+  const classNames = `${style.pane} ${className}`;
+  return <div className={classNames}>{children}</div>;
+};
 
-export default Pane
+export default Pane;
