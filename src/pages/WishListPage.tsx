@@ -47,7 +47,7 @@ const WishListPage = () => {
     <Pane className={style.allcourse_pane}>
       <>
         <div className={style["allcourse__left-container"]}>
-          <FilterBar filterBarTitle="All Courses" onChange={setSortKey} />
+          <FilterBar filterBarTitle="My Wishlist" onChange={setSortKey} />
           <CourseList courseListData={updatedCourseList} page="wishlist" />
         </div>
         <div className={style["allcourse__right-container"]}>
