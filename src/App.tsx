@@ -44,11 +44,9 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/coursedetails" element={<CoursesDetailsPage />} />
         <Route
-          path="/hashedin_university/"
+          path="/hashedin_university"
           element={<Navigate to="/courses" />}></Route>
-        <Route
-          path="/hashedin_university/"
-          element={<Navigate to="/courses" />}></Route>
+        <Route path="/" element={<Navigate to="/courses" />}></Route>
         <Route
           path="*"
           element={
