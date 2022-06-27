@@ -18,7 +18,7 @@ interface listOfCourse {
   mrp: string;
 }
 const Checkout = () => {
-  const savedAmount = 1007;
+  const [totalMRPAmount, settotalMRPAmount] = useState(1007);
   const [totalAmount, setTotalAmount] = useState(0);
   const dispatch = useDispatch();
   const courseList = useSelector(
@@ -28,8 +28,17 @@ const Checkout = () => {
     const toalCost = courseList.map((data) => {
       return Number(data.finalPrice);
     });
+    const toalMRPCost = courseList.map((data) => {
+      return Number(data.mrp);
+    });
     setTotalAmount(
       toalCost.reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        0
+      )
+    );
+    settotalMRPAmount(
+      toalMRPCost.reduce(
         (previousValue, currentValue) => previousValue + currentValue,
         0
       )
@@ -41,7 +50,7 @@ const Checkout = () => {
       <div className={style.checkout__tag}>Total Amount</div>
       <div className={style.checkout__amount}>Rs {totalAmount}-/</div>
       <div className={style.checkout__savedamount}>
-        You have saved Rs {savedAmount}/-
+        You have saved Rs {totalMRPAmount - totalAmount}/-
       </div>
       <div
         className={style.checkout__button}
