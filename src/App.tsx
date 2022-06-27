@@ -43,7 +43,12 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/coursedetails" element={<CoursesDetailsPage />} />
-        <Route path="/" element={<Navigate to="/courses" />}></Route>
+        <Route
+          path="/hashedin_university/"
+          element={<Navigate to="/courses" />}></Route>
+        <Route
+          path="/hashedin_university/"
+          element={<Navigate to="/courses" />}></Route>
         <Route
           path="*"
           element={
