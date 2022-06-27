@@ -4,9 +4,10 @@
   .allcourse__left-container {
     display: block;
     width: 70%;
-    .left__card {
+    .allcourse__courseList {
       width: 100%;
-      height: 680px;
+      height: 43rem;
+      overflow-x: scroll;
     }
   }
   .allcourse__right-container {

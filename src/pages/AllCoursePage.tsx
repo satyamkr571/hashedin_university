@@ -70,7 +70,9 @@ const AllCoursePage = () => {
       <>
         <div className={style["allcourse__left-container"]}>
           <FilterBar filterBarTitle="All Courses" onChange={setSortKey} />
-          <CourseList courseListData={updatedCourseList} page="course" />
+          <div className={style.allcourse__courseList}>
+            <CourseList courseListData={updatedCourseList} page="course" />
+          </div>
         </div>
         <div className={style["allcourse__right-container"]}>
           <SearchBar onChange={setSearchKey} />
