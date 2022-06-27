@@ -10,10 +10,9 @@ type Props = {
   message: string;
 };
 const Modal = ({ className, message, type }: Props) => {
-  const navigate = useNavigate();
   const classNames = `${style.modal} ${className}`;
   const dispatch = useDispatch();
-     const navigate = useNavigate();
+  const navigate = useNavigate();
   const modalClickHandler = () => {
     dispatch({ type: "UPDATE_MODAL_STATUS" });
     navigate("/courses");
