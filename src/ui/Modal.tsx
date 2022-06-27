@@ -3,16 +3,19 @@ import style from "./Modal.module.scss";
 import success from "../assets/image/success.png";
 import waring from "../assets/image/warning.png";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 type Props = {
   className: string;
   type: string;
   message: string;
 };
 const Modal = ({ className, message, type }: Props) => {
+  const navigate = useNavigate();
   const classNames = `${style.modal} ${className}`;
   const dispatch = useDispatch();
   const modalClickHandler = () => {
     dispatch({ type: "UPDATE_MODAL_STATUS" });
+    navigate("/courses");
   };
   return (
     <div className={classNames}>

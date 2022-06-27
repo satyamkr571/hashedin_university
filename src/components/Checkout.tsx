@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./Checkout.module.scss";
 import { useSelector, useDispatch } from "react-redux";
+
 interface RootState {
   cartReducer: {
     listOfCourse: [listOfCourse];
@@ -44,15 +45,15 @@ const Checkout = () => {
       </div>
       <div
         className={style.checkout__button}
-        onClick={() =>
+        onClick={() => {
           dispatch({
             type: "UPDATE_MODAL_STATUS",
             payload: {
               type: "success",
               message: "Your have successfully place your order",
             },
-          })
-        }>
+          });
+        }}>
         CHECKOUT
       </div>
     </div>
