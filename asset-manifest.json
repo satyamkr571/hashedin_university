@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hashedin_university/static/css/main.47652fb4.css",
-    "main.js": "/hashedin_university/static/js/main.79f70263.js",
+    "main.js": "/hashedin_university/static/js/main.90c8ff37.js",
     "static/js/787.3b55eb60.chunk.js": "/hashedin_university/static/js/787.3b55eb60.chunk.js",
     "static/media/profile.png": "/hashedin_university/static/media/profile.1b5b1cc76cf0691ed9a3.png",
     "index.html": "/hashedin_university/index.html",
     "main.47652fb4.css.map": "/hashedin_university/static/css/main.47652fb4.css.map",
-    "main.79f70263.js.map": "/hashedin_university/static/js/main.79f70263.js.map",
+    "main.90c8ff37.js.map": "/hashedin_university/static/js/main.90c8ff37.js.map",
     "787.3b55eb60.chunk.js.map": "/hashedin_university/static/js/787.3b55eb60.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47652fb4.css",
-    "static/js/main.79f70263.js"
+    "static/js/main.90c8ff37.js"
   ]
 }
