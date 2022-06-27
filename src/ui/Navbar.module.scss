@@ -29,6 +29,10 @@
       i {
         font-size: large;
       }
+      .nav__logo {
+        width: auto;
+        height: 1rem;
+      }
     }
     .navbar__menu__link--active {
       display: flex;
@@ -40,6 +44,10 @@
       i {
         font-size: 1.5rem;
         font-weight: 900;
+      }
+      .nav__logo {
+        width: auto;
+        height: 1.35rem;
       }
     }
   }

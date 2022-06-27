@@ -1,0 +1,13 @@
+.profile_container {
+  display: flex;
+  height: auto;
+  gap: 1rem;
+  justify-content: space-between;
+  .profile__left_container {
+    width: 16.25rem;
+  }
+  .profile__right_container {
+    width: 100%;
+    height: auto;
+  }
+}

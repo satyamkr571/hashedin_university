@@ -1,0 +1,24 @@
+.cartpage {
+  .cartpage__head {
+    font: normal normal 600 20px/24px Montserrat;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+  .cart {
+    display: flex;
+    .cart__left-container {
+      display: block;
+      width: 70%;
+    }
+    .cart__right-container {
+      display: block;
+      width: 28%;
+      padding-left: 2%;
+      .right__card {
+        width: 100%;
+        height: auto;
+        min-height: 8rem;
+        padding: 2.5rem 1rem;
+      }
+    }
+  }
+}

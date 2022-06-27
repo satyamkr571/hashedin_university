@@ -1,0 +1,175 @@
+.profile {
+  width: 100%;
+  height: max-content;
+  padding: 1rem 1.25rem;
+  &::placeholder {
+    padding: 0.5rem 0.5rem;
+  }
+  .profile__name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    .profile__name__input {
+      height: 2rem;
+      width: 225px;
+      background-color: #f7f8ff;
+      border: none;
+      padding: 0.125rem 0.5rem;
+      font: normal normal medium 14px/18px Montserrat;
+    }
+  }
+  .profile__about {
+    padding: 0.5rem 0rem;
+    textarea {
+      background-color: #f7f8ff;
+    }
+  }
+  .profile__interest {
+    padding: 0.5rem 0rem;
+    .profile__interest__option {
+      .profile__interest__option__list {
+        display: flex;
+        align-items: center;
+        padding: 0.125rem 0.5rem;
+        font: normal normal medium 14px/18px Montserrat;
+
+        .profile__interest__option__checkbox,
+        input[type="checkbox"] {
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 6px;
+        }
+        .profile__interest__option__value {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+  .parent__occupation {
+    padding: 0.5rem 0rem;
+    .profile__occupation__label {
+      padding: 0.25rem 0rem;
+      font: normal normal medium 14px/18px Montserrat;
+    }
+    .profile__occupation__radio {
+      padding: 0.25rem 0rem;
+      label {
+        font: normal normal medium 14px/18px Montserrat;
+      }
+    }
+  }
+  .profile__occupation_details {
+    width: calc(100% - 32px);
+    border: 1.5px solid rgba(75, 75, 75, 0.637);
+    height: 310px;
+    padding: 0.5rem 1rem;
+    .profile__occupation__label {
+      padding: 0.5rem 0rem;
+      .profile__details__radio_checkbox {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .profile__interest__option__checkmark {
+          background-color: #ff6738;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 16px;
+          width: 17px;
+          background-color: #eee;
+          border-radius: 4px;
+        }
+        .profile__interest__option__checkmarked {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 16px;
+          width: 17px;
+          background-color: #eee;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .profile__save_button {
+    display: inline-flex;
+    width: 9rem;
+    height: 2.5rem;
+    background-color: #ff6738;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+
+    float: right;
+    margin-top: 0.5rem;
+  }
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: black;
+  font-size: 14px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: coral;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

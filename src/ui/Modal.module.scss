@@ -1,0 +1,68 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  .modal__container {
+    width: 650px;
+    height: 253px;
+    margin-bottom: 10rem;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 0.75rem;
+    .modal__header {
+      display: flex;
+      width: 100%;
+      height: 4rem;
+      background-color: #eff2ff;
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+    }
+    .modal__content {
+      display: flex;
+      width: 100%;
+      height: 45%;
+      justify-content: center;
+      align-items: center;
+      .modal__content__tick {
+        width: 1.75rem;
+        height: auto;
+      }
+      .modal__content__message {
+        display: flex;
+        width: 40%;
+        padding-left: 1rem;
+        font: normal normal 600 18px/22px Montserrat;
+      }
+    }
+    .modal__footer {
+      display: flex;
+      width: 100%;
+
+      justify-content: center;
+      align-items: center;
+      .modal__footer__button {
+        display: flex;
+        align-items: center;
+        width: 9rem;
+        height: 2.5rem;
+        background-color: #ff6738;
+        justify-content: center;
+        color: #fefefe;
+        text-decoration: none;
+        font: normal normal 600 16px/19px Montserrat;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

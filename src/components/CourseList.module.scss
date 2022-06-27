@@ -1,0 +1,63 @@
+.courselist_container {
+  height: auto;
+  min-height: 6.25rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  .courselist__image {
+    width: 5rem;
+    height: 4.375rem;
+    background: #f2f2f2 0% 0% no-repeat padding-box;
+    margin-left: 1.25rem;
+  }
+  .courselist__title {
+    word-wrap: break-word;
+    width: 14rem;
+  }
+  .courselist__data {
+    width: 6rem;
+    padding-left: 0.125rem;
+  }
+  .courselist__fav {
+    width: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .courselist__author {
+    font: normal normal 300 16px/19px Montserrat;
+  }
+  .courselist__mrp {
+    font: normal normal 300 16px/19px Montserrat;
+    text-decoration: line-through;
+  }
+  .courselist__discounted {
+    font: normal normal bold 20px/24px Montserrat;
+  }
+  .courselist__topic {
+    margin-top: 0.125rem;
+    display: flex;
+    padding: 0.125rem;
+    width: 5.75rem;
+    height: 1.125rem;
+    background: #ff6738 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    font: normal normal medium 12px/15px Montserrat;
+    color: #f2f2f2;
+  }
+  .courselist__cart {
+    display: flex;
+    width: 8rem;
+    height: 2.5rem;
+    padding: 0rem 0.5rem;
+    background: #ff6738 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    align-items: center;
+    color: #f2f2f2;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
